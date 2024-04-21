@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esports-Gaming</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <div class="logo">
+            
+        </div>
+        <div class="menu-containor">
+            <div class="menu" id="menu">
+                <a href="#">HOME</a>
+                <a href="#">PAGES</a>
+                <a href="#">OVERVIEW</a>
+                <a href="#">COMMUNITY</a>
+                <a href="#">BLOG</a>
+                <a href="#">CONTACT</a>
+            </div>
+            <div class="navbar-icon">
+                
+                <i class="fa-solid fa-magnifying-glass glass" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-bars" style="color: #ffffff;" id="bars"></i>
+            </div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="hero-contant">
+            <h3>WORLD GAMING</h3>
+          
+            <h1>Play Exciting<span>Games</span> This Website</h1>
+            <p>Play Free Game
+            </p>
+            <button>READ MORE</button>
+        </div>
+        <div class="hero-image">
+            <img src="img/dragon.png" alt="">
+        </div>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo01.png" alt=""></div>
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo02.png" alt=""></div>
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo03.png" alt=""></div>
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo04.png" alt=""></div>
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo05.png" alt=""></div>
+            <div class="swiper-slide" style="height: 150px;"><img src="img/brand_logo06.png" alt=""></div>
+        </div>
+    </div>
+
+    <div class="product_wrapper">
+        <div class="product_main">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="product" style="background-image: url(img/bg\ -\ Copy\ \(2\).jpg);">
+                            <div class="btn"><button><a href="SnakeGame/index.html">Play Game</a></button></div>
+                            
+                            <div class="product1-contant">
+                                <h3>SnakeGame <span>DAILY</span></p>
+                                    <p>Entry Free: <span>Free</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product" style="background-image: url(img/dragon.png);">
+                            <div class="btn"><button><a href="Dragon Game/index.html">Play Game</a></button></div>
+                            <div class="product1-contant">
+                                <h3>Dragon Game <span>DAILY</span></p>
+                                    <p>Entry Free: <span>Free</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product" >
+                            <div class="btn"><button><a href="2048-master/index.html">Play Game</a></button></div>
+                            <div class="product1-contant">
+                                <h3>2048 Game <span>DAILY</span></p>
+                                    <p>Entry Free: <span>Free</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="product" style="background-image: url(img/dragon.png);">
+                            <div class="btn"><button><a href="Dragon Game/index.html">Play Game</a></button></div>
+                            <div class="product1-contant">
+                                <h3>Dragon Game <span>DAILY</span></p>
+                                    <p>Entry Free: <span>Free</span></p>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                autoplay: true,
+                breakpoints: {
+                    500: {
+                        slidesPerView: 4
+                    },
+                    900: {
+                        slidesPerView: 5
+                    }
+                }
+            });
+
+            var swiper = new Swiper(".mySwiper1", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 50,
+                },
+            },
+        });
+
+            let bars = document.querySelector("#bars") 
+            let menu = document.querySelector("#menu") 
+
+            bars.addEventListener("click",()=>{
+                menu.classList.toggle("openmenu")
+            })
+        </script>
+</body>
+
+</html>
